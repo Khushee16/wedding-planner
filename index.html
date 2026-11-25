@@ -9,13 +9,14 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="index.html">EverAfter <span style="color:#b08d57">Events</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item ms-lg-3"><a class="btn btn-gold btn-sm" href="enquiry.html">Enquire</a></li>
@@ -24,7 +25,7 @@
   </div>
 </nav>
 
-<header class="hero">
+<header class="hero" id="main">
   <div class="container">
     <p class="eyebrow text-white-50">Wedding &amp; Event Planning</p>
     <h1>Your day, beautifully<br>thought through.</h1>
@@ -48,7 +49,7 @@
 <section class="section" style="background:var(--blush)">
   <div class="container">
     <div class="row align-items-center g-5">
-      <div class="col-lg-6 reveal"><img class="img-fluid rounded-4 shadow" src="https://picsum.photos/seed/everafter-table/1000/700" alt="A styled wedding reception table"></div>
+      <div class="col-lg-6 reveal"><img loading="lazy" decoding="async" class="img-fluid rounded-4 shadow" src="https://picsum.photos/seed/everafter-table/1000/700" alt="A styled wedding reception table"></div>
       <div class="col-lg-6 reveal">
         <p class="eyebrow">The studio</p>
         <h2>Small team, unhurried planning</h2>
@@ -69,9 +70,9 @@
     <p class="eyebrow">Featured</p>
     <h2 class="mb-4">A glimpse of recent celebrations</h2>
     <div class="row g-3">
-      <div class="col-md-4"><img class="gallery-img" src="https://picsum.photos/seed/everafter-g1/800/600" alt="Wedding ceremony arch"></div>
-      <div class="col-md-4"><img class="gallery-img" src="https://picsum.photos/seed/everafter-g2/800/600" alt="Reception dinner setting"></div>
-      <div class="col-md-4"><img class="gallery-img" src="https://picsum.photos/seed/everafter-g3/800/600" alt="Evening celebration lights"></div>
+      <div class="col-md-4"><img loading="lazy" decoding="async" class="gallery-img" src="https://picsum.photos/seed/everafter-g1/800/600" alt="Wedding ceremony arch"></div>
+      <div class="col-md-4"><img loading="lazy" decoding="async" class="gallery-img" src="https://picsum.photos/seed/everafter-g2/800/600" alt="Reception dinner setting"></div>
+      <div class="col-md-4"><img loading="lazy" decoding="async" class="gallery-img" src="https://picsum.photos/seed/everafter-g3/800/600" alt="Evening celebration lights"></div>
     </div>
     <a class="btn btn-outline-gold mt-4" href="gallery.html">View Full Gallery</a>
   </div>

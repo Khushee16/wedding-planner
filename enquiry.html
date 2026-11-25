@@ -9,10 +9,11 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="index.html">EverAfter <span style="color:#b08d57">Events</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -24,7 +25,7 @@
   </div>
 </nav>
 
-<section class="section"><div class="container" style="max-width:760px">
+<section class="section" id="main"><div class="container" style="max-width:760px">
   <div class="text-center mb-4 reveal"><p class="eyebrow">Enquire</p><h1>Tell us about your celebration</h1><p class="text-muted">A few details help us reply with honest, useful next steps.</p></div>
 
   <div class="demo-note mb-4 reveal">
@@ -35,8 +36,8 @@
 
   <form id="enquiry-form" class="card p-4 p-md-5 reveal" novalidate>
     <div class="row g-3">
-      <div class="col-md-6"><label class="form-label" for="eq-name">Your name *</label><input class="form-control" id="eq-name" required placeholder="e.g. Alex Morgan"></div>
-      <div class="col-md-6"><label class="form-label" for="eq-contact">Email or phone *</label><input class="form-control" id="eq-contact" required placeholder="you@example.com or (555) 123-4567"></div>
+      <div class="col-md-6"><label class="form-label" for="eq-name">Your name *</label><input class="form-control" id="eq-name" required placeholder="e.g. Alex Morgan" autocomplete="name"><div class="invalid-feedback">Please enter your name.</div></div>
+      <div class="col-md-6"><label class="form-label" for="eq-contact">Email or phone *</label><input class="form-control" id="eq-contact" required placeholder="you@example.com or (555) 123-4567" autocomplete="email"><div class="invalid-feedback">Please add an email or phone so the studio could reply.</div></div>
       <div class="col-md-6"><label class="form-label" for="eq-type">Event type *</label>
         <select class="form-select" id="eq-type" required>
           <option value="" selected>Choose…</option><option>Wedding</option><option>Engagement</option><option>Reception</option><option>Anniversary</option><option>Other celebration</option>
@@ -52,7 +53,7 @@
     </div>
   </form>
 
-  <div id="enquiry-summary" class="card p-4 p-md-5 text-center d-none" role="status">
+  <div id="enquiry-summary" class="card p-4 p-md-5 text-center d-none" role="status" aria-live="polite">
     <h2 class="h3">Thank you, <span id="enquiry-name"></span>!</h2>
     <p class="text-muted">This is a <strong>demo confirmation</strong> — nothing was sent or stored.</p>
     <p>Demo reference: <strong id="enquiry-ref"></strong></p>
