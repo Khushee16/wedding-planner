@@ -1,0 +1,41 @@
+/*
+Theme Name: EverAfter Events
+Theme URI: https://example.com/everafter-events
+Author: Khushi Khatri
+Author URI: https://example.com
+Description: A custom WordPress theme for EverAfter Events, a fictional wedding and event planning studio. Built as a self-directed portfolio piece — not client work. Includes home, packages and enquiry page templates.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: everafter
+Tags: wedding, events, elegant, responsive, custom-menu, custom-logo, featured-images
+*/
+
+:root{--ink:#2b2118;--gold:#b08d57;--gold-lt:#e9dcc3;--blush:#f7efe6;--sage:#7d8b6f;--cream:#fdfaf5}
+body{font-family:'Jost',system-ui,sans-serif;color:var(--ink);background:var(--cream)}
+h1,h2,h3,.serif{font-family:'Playfair Display',serif}
+.navbar{background:rgba(253,250,245,.96);backdrop-filter:blur(8px)}
+.navbar-brand{font-family:'Playfair Display',serif;font-size:1.5rem;letter-spacing:.04em}
+.nav-link{letter-spacing:.12em;text-transform:uppercase;font-size:.82rem}
+.btn-gold{background:var(--gold);color:#fff;border-radius:999px;padding:.65rem 1.8rem;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;border:none}
+.btn-gold:hover{background:#9a7a48;color:#fff;transform:translateY(-2px);box-shadow:0 8px 20px rgba(176,141,87,.35)}
+.btn-outline-gold{border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:.6rem 1.6rem;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+.btn-outline-gold:hover{background:var(--gold);color:#fff}
+.hero{min-height:88vh;background:linear-gradient(rgba(43,33,24,.45),rgba(43,33,24,.45)),url('https://picsum.photos/seed/everafter-hero/1800/1100') center/cover;display:flex;align-items:center;color:#fff;text-align:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.05}
+.eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.75rem;color:var(--gold)}
+.section{padding:5rem 0}
+.card{border:none;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(43,33,24,.08);transition:transform .3s ease,box-shadow .3s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(43,33,24,.14)}
+.price{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold)}
+.gallery-img{border-radius:14px;width:100%;height:280px;object-fit:cover;transition:transform .4s ease}
+.gallery-img:hover{transform:scale(1.03)}
+footer.site-footer{background:#2b2118;color:#e9dcc3}
+footer.site-footer a{color:#e9dcc3;text-decoration:none}
+footer.site-footer a:hover{color:#fff}
+.demo-note{background:#fff8e6;border:1px dashed var(--gold);border-radius:12px;padding:1rem 1.25rem}
+.form-control,.form-select{border-radius:10px;padding:.7rem 1rem}
+.form-control:focus,.form-select:focus{border-color:var(--gold);box-shadow:0 0 0 .25rem rgba(176,141,87,.25)}
